@@ -12,6 +12,10 @@ const Header = ({ name }) => {
             <HeaderNav>
                 <HeaderButton>Home</HeaderButton>
                 <HeaderButton>About Us</HeaderButton>
+                <HeaderForm >
+                    <HeaderInput type={'text'} placeholder='Search' />
+                    <HeaderInput type={'submit'} value={'Search'} />
+                </HeaderForm>
             </HeaderNav>
         </HeaderStyled>
     )
@@ -42,12 +46,24 @@ const HeaderTitle = styled.h3`
 
 const HeaderNav = styled.nav`
     margin-left: auto;
+    display: flex;
+    align-items: center;
 `;
 
 const HeaderButton = styled.button`
     font-family: 'Pirata One', cursive;
     font-size: 1.3rem;
     margin-left: 5px;
+    `;
+
+const HeaderInput = styled.input`
+    font-family: 'Pirata One', cursive;
+    font-size: 1.3rem;
+    margin-left: 5px;
+`;
+
+const HeaderForm = styled.form`
+    display: flex;
 `;
 
 export default Header;
