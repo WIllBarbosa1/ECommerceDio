@@ -1,7 +1,12 @@
+import Header from "./components/Header";
+
 function App() {
   return (
     <div>
-      Olá Mundo!
+      <Header name="Jean's Shop" />
+      <div>
+        Olá Mundo
+      </div>
     </div>
   );
 }
